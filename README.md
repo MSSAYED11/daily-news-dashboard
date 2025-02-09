@@ -25,17 +25,12 @@ The **Daily News & Quote Dashboard** is a simple web application that displays:
 - `script.js` – JavaScript logic to fetch and display quotes/news.
 - `back.jpg` – Background image.
 
-## 🔧 How to Run Locally
-1. **Clone the repository**:
-   ```sh
-   git clone https://github.com/mssayed11/daily-news-dashboard.git
-
-
-
-in this also explain the below thing. Also explain that i tried of other api's but still i was facing the same problem so suggest to run the code in local
-
-The 426 (Upgrade Required) error means that NewsAPI now requires an upgraded (paid) plan to access their API from certain environments (like GitHub Pages).
+❗ Issue with News API (Error 426 - Upgrade Required)
+You may encounter a 426 (Upgrade Required) error when trying to fetch news articles.
 
 🔹 Why is this Happening?
-NewsAPI.org blocks free-tier API keys from being used on GitHub Pages, Netlify, and other public hosting services.
-The API works locally but fails when deployed.
+NewsAPI.org has restricted free-tier API keys from being used on public hosting platforms like GitHub Pages, Netlify, and similar services. While the API works fine locally, it fails when deployed online.
+
+🔹 Suggested Solution
+Since using the API online requires a paid plan, which was not feasible, I recommend running the project locally to fetch news successfully.
+
