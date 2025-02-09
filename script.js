@@ -1,5 +1,5 @@
 const newsApiKey = "41bf0f28cf484a23bb39abd7cca431bf";
- //News Api only works in local but not github pages. Read README.md for clear reason
+ // News Api only works in local but not github pages. Read README.md for clear reason
 const quoteUrl = "https://famous-quotes4.p.rapidapi.com/random?category=all&count=1";
 const quoteHeaders = {
     method: 'GET',
