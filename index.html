@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily News & Quote Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Daily News & Quote Dashboard</h1>
+        
+        <div class="quote-section">
+            <h2>Inspirational Quote</h2>
+            <p id="quote">Loading...</p>
+            <button id="new-quote">Get New Quote</button>
+        </div>
+
+        <div class="news-section">
+            <h2>Latest News</h2>
+            <select id="news-category">
+                <option value="general">General</option>
+                <option value="technology">Technology</option>
+                <option value="sports">Sports</option>
+                <option value="health">Health</option>
+            </select>
+            <button id="fetch-news">Get News</button>
+            <ul id="news-list"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
