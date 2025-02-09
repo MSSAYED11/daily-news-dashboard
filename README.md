@@ -25,7 +25,7 @@ The **Daily News & Quote Dashboard** is a simple web application that displays:
 - `script.js` – JavaScript logic to fetch and display quotes/news.
 - `back.jpg` – Background image.
 
-❗ Issue with News API (Error 426 - Upgrade Required)
+##❗ Issue with News API (Error 426 - Upgrade Required)
 You may encounter a 426 (Upgrade Required) error when trying to fetch news articles.
 
 🔹 Why is this Happening?
