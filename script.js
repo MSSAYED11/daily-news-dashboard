@@ -1,10 +1,10 @@
-const newsApiKey = "41bf0f28cf484a23bb39abd7cca431bf"; // Replace with your actual API key
-const quoteUrl = "https://the-personal-quotes.p.rapidapi.com/quotes/tags/happiness"; // New Quote API URL
+const newsApiKey = "41bf0f28cf484a23bb39abd7cca431bf";
+const quoteUrl = "https://famous-quotes4.p.rapidapi.com/random?category=all&count=1";
 const quoteHeaders = {
     method: 'GET',
     headers: {
         'x-rapidapi-key': 'da48073ae3mshdef0165ae8ccdcdp10cc1bjsn03e1d1cc685f',
-        'x-rapidapi-host': 'the-personal-quotes.p.rapidapi.com'
+        'x-rapidapi-host': 'famous-quotes4.p.rapidapi.com'
     }
 };
 
@@ -15,9 +15,7 @@ async function fetchQuote() {
     try {
         const response = await fetch(quoteUrl, quoteHeaders);
         const data = await response.json();
-        document.getElementById("quote").innerText = `"${data[0].quote}" - ${data[0].author}`;
-        
-        // Optional: Smooth transition effect for the quote
+        document.getElementById("quote").innerText = `"${data[0].text}" - ${data[0].author}`;
         document.getElementById("quote").style.opacity = 1;
         document.getElementById("quote").style.transition = "opacity 0.5s ease-in-out";
     } catch (error) {
@@ -45,5 +43,4 @@ async function fetchNews() {
     }
 }
 
-// Fetch a quote on page load
 fetchQuote();
