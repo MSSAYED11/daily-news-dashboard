@@ -17,15 +17,19 @@ CSS – Styled using modern glassmorphism design.
 JavaScript – Fetches data from APIs.
 GitHub Pages – For deployment.
 📂 Project Files
-index.html – Main webpage.
-style.css – Styling for the dashboard.
-script.js – JavaScript logic to fetch and display quotes/news.
-back.jpg – Background image.
+bash
+Copy
+Edit
+📦 daily-news-dashboard  
+ ┣ 📜 index.html      # Main webpage  
+ ┣ 📜 style.css       # Styling for the dashboard  
+ ┣ 📜 script.js       # JavaScript logic to fetch and display quotes/news  
+ ┗ 📜 back.jpg        # Background image  
 ❗ Issue with News API (Error 426 - Upgrade Required)
 You may encounter a 426 (Upgrade Required) error when trying to fetch news articles.
 
 🔹 Why is this Happening?
-NewsAPI.org has restricted free-tier API keys from being used on public hosting platforms like GitHub Pages, Netlify, and similar services. While the API works perfectly on local environments, it fails when deployed online.
+NewsAPI.org has restricted free-tier API keys from being used on public hosting platforms like GitHub Pages, Netlify, and similar services. While the API works fine locally, it fails when deployed online.
 
-🔹 Suggested Solution:
+🔹 Suggested Solution
 Since using the API online requires a paid plan, which was not feasible, I recommend running the project locally to fetch news successfully.
